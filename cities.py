@@ -47,7 +47,6 @@ username = getpass.getpass(prompt='Username:')
 password = getpass.getpass()
 gis = GIS("https://www.arcgis.com", username, password)
 
-
 print ('Adding CSV as Item to ArcGIS Online ..')
 csv_item = gis.content.add({}, csv_file)
 
